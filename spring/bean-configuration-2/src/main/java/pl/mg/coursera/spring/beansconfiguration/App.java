@@ -9,7 +9,12 @@ public class App {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
         Person person = (Person) context.getBean("person");
         System.out.println(person.speak());
+
+        Address address = (Address) context.getBean("address");
         System.out.println(person.toString());
+        
+        
+        
 
     }
 }

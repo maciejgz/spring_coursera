@@ -5,6 +5,7 @@ public class Person {
     private int id;
     private String name;
     private int taxId;
+    private Address address;
 
     public Person(int id, String name) {
         super();
@@ -38,7 +39,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person [id=" + id + ", name=" + name + ", taxId=" + taxId + "]";
+        return "Person [id=" + id + ", name=" + name + ", taxId=" + taxId + ", address=" + address + "]";
     }
 
     public int getTaxId() {
@@ -47,5 +48,13 @@ public class Person {
 
     public void setTaxId(int taxId) {
         this.taxId = taxId;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }

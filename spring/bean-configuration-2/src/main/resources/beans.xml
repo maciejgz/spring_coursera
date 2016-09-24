@@ -3,9 +3,17 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean name="person" class="pl.mg.coursera.spring.beansconfiguration.Person" >
+	<bean name="person" class="pl.mg.coursera.spring.beansconfiguration.Person">
 		<constructor-arg name="id" value="777"></constructor-arg>
 		<constructor-arg name="name" value="Marry"></constructor-arg>
 		<property name="taxId" value="999"></property>
+		<property name="address" ref="address"></property>
+	</bean>
+	
+	
+	<bean id="address" class="pl.mg.coursera.spring.beansconfiguration.Address">
+		<constructor-arg name="street" value="jerozolimskie"></constructor-arg>
+		<constructor-arg value="117" name="postCode"></constructor-arg>
 	</bean>
 </beans>
+	
