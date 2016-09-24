@@ -12,6 +12,9 @@
 	<version>1.0.0</version>
 	<packaging>war</packaging>
 	<name>bean-configuration-2</name>
+	
+	
+	
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>

@@ -5,6 +5,21 @@ public class Person {
     private int id;
     private String name;
 
+    
+    public Person(int id, String name) {
+        super();
+        this.id = id;
+        this.name = name;
+    }
+
+    public Person(){
+        
+    }
+    
+    public String speak() {
+        return "Hello";
+    }
+
     public int getId() {
         return id;
     }
@@ -19,5 +34,10 @@ public class Person {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Person [id=" + id + ", name=" + name + "]";
     }
 }
