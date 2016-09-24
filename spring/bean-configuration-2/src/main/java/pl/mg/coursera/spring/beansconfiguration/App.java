@@ -7,10 +7,11 @@ public class App {
 
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-        Person person = (Person) context.getBean("person");
-        System.out.println(person.speak());
+        Person person1 = (Person) context.getBean("person1");
+        Person person2 = (Person) context.getBean("person2");
 
-        System.out.println(person.toString());
+        System.out.println(person1.toString());
+        System.out.println(person2.toString());
 
         ((ClassPathXmlApplicationContext) context).close();
 

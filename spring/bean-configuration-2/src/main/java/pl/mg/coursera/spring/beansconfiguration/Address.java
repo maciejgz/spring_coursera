@@ -9,8 +9,10 @@ public class Address {
         this.street = street;
         this.postCode = postCode;
     }
-    
-    public void init(){
+
+
+
+    public void init() {
         System.out.println("address init");
     }
 
