@@ -6,5 +6,6 @@
 	<bean name="person" class="pl.mg.coursera.spring.beansconfiguration.Person" >
 		<constructor-arg name="id" value="777"></constructor-arg>
 		<constructor-arg name="name" value="Marry"></constructor-arg>
+		<property name="taxId" value="999"></property>
 	</bean>
 </beans>

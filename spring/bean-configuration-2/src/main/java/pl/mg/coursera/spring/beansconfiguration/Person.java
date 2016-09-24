@@ -4,18 +4,18 @@ public class Person {
 
     private int id;
     private String name;
+    private int taxId;
 
-    
     public Person(int id, String name) {
         super();
         this.id = id;
         this.name = name;
     }
 
-    public Person(){
-        
+    public Person() {
+
     }
-    
+
     public String speak() {
         return "Hello";
     }
@@ -38,6 +38,14 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person [id=" + id + ", name=" + name + "]";
+        return "Person [id=" + id + ", name=" + name + ", taxId=" + taxId + "]";
+    }
+
+    public int getTaxId() {
+        return taxId;
+    }
+
+    public void setTaxId(int taxId) {
+        this.taxId = taxId;
     }
 }
