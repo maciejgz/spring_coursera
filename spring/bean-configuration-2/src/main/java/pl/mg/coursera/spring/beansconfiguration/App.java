@@ -10,11 +10,9 @@ public class App {
         Person person = (Person) context.getBean("person");
         System.out.println(person.speak());
 
-        Address address = (Address) context.getBean("address");
         System.out.println(person.toString());
-        
-        
-        
+
+        ((ClassPathXmlApplicationContext) context).close();
 
     }
 }

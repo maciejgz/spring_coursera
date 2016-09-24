@@ -13,6 +13,14 @@ public class Person {
         this.name = name;
     }
 
+    public void onCreate() {
+        System.out.println("person onCreate");
+    }
+
+    public void onDestroy() {
+        System.out.println("person onDestroy");
+    }
+
     public Person() {
 
     }
