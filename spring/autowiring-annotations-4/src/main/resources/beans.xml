@@ -5,4 +5,11 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 
 	<context:annotation-config />
+	<!-- <context:component-scan base-package="pl.mg.coursera.spring.autowiringannotations"></context:component-scan>
+ -->
+	<bean id="logger" class="pl.mg.coursera.spring.autowiringannotations.Logger"></bean>
+	 <bean id="consoleWriter" primary="true"
+		class="pl.mg.coursera.spring.autowiringannotations.ConsoleWriter"></bean>
+	 <bean id="fileWriter" class="pl.mg.coursera.spring.autowiringannotations.FileWriter"></bean>
+
 </beans>

@@ -1,5 +1,7 @@
 package pl.mg.coursera.spring.autowiringannotations;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Logger {
 
     private ConsoleWriter consoleWriter;
@@ -9,6 +11,7 @@ public class Logger {
         return consoleWriter;
     }
 
+    @Autowired
     public void setConsoleWriter(ConsoleWriter consoleWriter) {
         this.consoleWriter = consoleWriter;
     }
@@ -17,6 +20,7 @@ public class Logger {
         return fileWriter;
     }
 
+    @Autowired
     public void setFileWriter(FileWriter fileWriter) {
         this.fileWriter = fileWriter;
     }
