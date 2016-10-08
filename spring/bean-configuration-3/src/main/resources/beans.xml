@@ -5,9 +5,9 @@
 
 
 	<bean id="logger" class="pl.mg.coursera.spring.autowiring.Logger"
-		autowire="byType"></bean>
+		autowire="byName"></bean>
 
-	<bean id="consolewriter" class="pl.mg.coursera.spring.autowiring.ConsoleWriter"></bean>
-	<bean id="filewriter" class="pl.mg.coursera.spring.autowiring.FileWriter"></bean>
+	<bean id="consoleWriter" class="pl.mg.coursera.spring.autowiring.ConsoleWriter"></bean>
+	<bean id="fileWriter" class="pl.mg.coursera.spring.autowiring.FileWriter"></bean>
 
 </beans>
