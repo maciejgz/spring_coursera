@@ -1,5 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>pl.mg.coursera</groupId>
 	<artifactId>spring</artifactId>
@@ -9,7 +9,8 @@
 	<description>Spring tutorial: https://www.udemy.com/javaspring</description>
 	<modules>
 		<module>bean-configuration-2</module>
-	</modules>
+    <module>bean-configuration-3</module>
+  </modules>
 
 
 	<properties>
