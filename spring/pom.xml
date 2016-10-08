@@ -10,6 +10,7 @@
 	<modules>
 		<module>bean-configuration-2</module>
     <module>bean-configuration-3</module>
+    <module>autowiring-annotations-4</module>
   </modules>
 
 
