@@ -16,9 +16,13 @@ public class App {
         
         
         
-        //listy
+        //listy typów prostych
         FruitBasket basket = context.getBean(FruitBasket.class);
         System.out.println(basket.toString());
+        
+        //listy z referencjami do beanów
+        Jungle jungle = (Jungle) context.getBean("jungle");
+        System.out.println(jungle.toString());
 
         ((ClassPathXmlApplicationContext) context).close();
 
