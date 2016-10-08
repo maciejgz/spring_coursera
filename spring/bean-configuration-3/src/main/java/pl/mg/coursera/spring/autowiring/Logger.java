@@ -2,28 +2,22 @@ package pl.mg.coursera.spring.autowiring;
 
 public class Logger {
 
-    private LogWriter consoleWriter;
+    private ConsoleWriter consoleWriter;
+    private FileWriter fileWriter;
 
-    public Logger(LogWriter consoleWriter, LogWriter fileWriter) {
-        this.consoleWriter = consoleWriter;
-        this.fileWriter = fileWriter;
-    }
-
-    private LogWriter fileWriter;
-
-    public LogWriter getConsoleWriter() {
+    public ConsoleWriter getConsoleWriter() {
         return consoleWriter;
     }
 
-    public void setConsoleWriter(LogWriter consoleWriter) {
+    public void setConsoleWriter(ConsoleWriter consoleWriter) {
         this.consoleWriter = consoleWriter;
     }
 
-    public LogWriter getFileWriter() {
+    public FileWriter getFileWriter() {
         return fileWriter;
     }
 
-    public void setFileWriter(LogWriter fileWriter) {
+    public void setFileWriter(FileWriter fileWriter) {
         this.fileWriter = fileWriter;
     }
 

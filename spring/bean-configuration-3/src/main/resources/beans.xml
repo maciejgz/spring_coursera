@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+	default-autowire="byType" default-autowire-candidates="fileWriter,consoleWriter">
 
 
-	<bean id="logger" class="pl.mg.coursera.spring.autowiring.Logger"
-		autowire="constructor"></bean>
+	<bean id="logger" class="pl.mg.coursera.spring.autowiring.Logger"></bean>
 
 	<bean id="consoleWriter" class="pl.mg.coursera.spring.autowiring.ConsoleWriter"></bean>
 	<bean id="fileWriter" class="pl.mg.coursera.spring.autowiring.FileWriter"></bean>
+	<bean id="fileWriter2" class="pl.mg.coursera.spring.autowiring.FileWriter"></bean>
+
 
 </beans>
