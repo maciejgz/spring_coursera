@@ -15,7 +15,6 @@ public class App {
         System.out.println(person2.toString());
         
         
-        
         //listy typów prostych
         FruitBasket basket = context.getBean(FruitBasket.class);
         System.out.println(basket.toString());
@@ -23,6 +22,11 @@ public class App {
         //listy z referencjami do beanów
         Jungle jungle = (Jungle) context.getBean("jungle");
         System.out.println(jungle.toString());
+        
+        //inner beans
+        Jungle jungleInner = (Jungle) context.getBean("jungle_inner");
+        System.out.println(jungleInner.toString());
+        
 
         ((ClassPathXmlApplicationContext) context).close();
 

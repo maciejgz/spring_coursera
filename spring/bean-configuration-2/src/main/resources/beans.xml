@@ -59,7 +59,7 @@
 		<property name="name" value="Greg"></property>
 		<property name="type" value="snake"></property>
 	</bean>
-	
+
 	<bean class="pl.mg.coursera.spring.beansconfiguration.Jungle" id="jungle">
 		<property name="largest" ref="elephant"></property>
 		<property name="animals">
@@ -67,6 +67,22 @@
 				<ref bean="lion"></ref>
 				<ref bean="elephant"></ref>
 				<ref bean="snake"></ref>
+			</list>
+		</property>
+	</bean>
+
+
+	<!-- inner beans -->
+	<bean class="pl.mg.coursera.spring.beansconfiguration.Jungle" id="jungle_inner">
+		<property name="largest" ref="elephant"></property>
+		<property name="animals">
+			<list>
+				<bean class="pl.mg.coursera.spring.beansconfiguration.Animal"
+					id="innerHippo">
+					<property name="name" value="mark"></property>
+					<property name="type" value="Hippo"></property>
+				</bean>
+
 			</list>
 		</property>
 	</bean>
