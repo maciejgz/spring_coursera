@@ -31,4 +31,16 @@
 		<constructor-arg name="street" value="jerozolimskie"></constructor-arg>
 		<constructor-arg value="117" name="postCode"></constructor-arg>
 	</bean>
+
+	<!-- lista jako argument konstruktora -->
+	<bean id="basket" class="pl.mg.coursera.spring.beansconfiguration.FruitBasket">
+		<constructor-arg value="Maciek's fruit basket"></constructor-arg>
+		<constructor-arg>
+			<list>
+				<value type="java.lang.String">apple</value>
+				<value type="java.lang.String">orange</value>
+				<value type="java.lang.String">banana</value>
+			</list>
+		</constructor-arg>
+	</bean>
 </beans>

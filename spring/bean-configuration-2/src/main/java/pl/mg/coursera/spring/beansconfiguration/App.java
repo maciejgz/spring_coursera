@@ -13,6 +13,12 @@ public class App {
 
         System.out.println(person1.toString());
         System.out.println(person2.toString());
+        
+        
+        
+        //listy
+        FruitBasket basket = context.getBean(FruitBasket.class);
+        System.out.println(basket.toString());
 
         ((ClassPathXmlApplicationContext) context).close();
 
