@@ -29,7 +29,7 @@ public class Robot {
     }
 
     @Autowired
-    public void setSpeech(@Value("#{randomText.getText()}") String speech) {
+    public void setSpeech(@Value("#{randomText.getText() + ' ' + new java.util.Date().toString()}") String speech) {
         this.speech = speech;
     }
 }
