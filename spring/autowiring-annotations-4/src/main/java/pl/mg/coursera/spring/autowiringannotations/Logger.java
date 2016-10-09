@@ -1,6 +1,7 @@
 package pl.mg.coursera.spring.autowiringannotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Logger {
 
@@ -21,6 +22,7 @@ public class Logger {
     }
 
     @Autowired
+    @Qualifier("squirrel")
     public void setFileWriter(FileWriter fileWriter) {
         this.fileWriter = fileWriter;
     }
