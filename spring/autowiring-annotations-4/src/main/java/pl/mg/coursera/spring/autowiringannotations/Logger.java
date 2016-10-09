@@ -1,6 +1,7 @@
 package pl.mg.coursera.spring.autowiringannotations;
 
-import javax.annotation.Resource;
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -13,7 +14,7 @@ public class Logger {
         return consoleWriter;
     }
 
-    @Resource(name="logger")
+    @Autowired
     public void setConsoleWriter(ConsoleWriter consoleWriter) {
         this.consoleWriter = consoleWriter;
     }
@@ -33,5 +34,15 @@ public class Logger {
 
     public void writeConsole(String text) {
         consoleWriter.write(text);
+    }
+    
+    @PostConstruct
+    public void init() {
+        System.out.println("init");
+    }
+    
+    @PreDestroy
+    public void destroy(){
+        System.out.println("destroy");
     }
 }
