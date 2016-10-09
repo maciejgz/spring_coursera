@@ -1,5 +1,7 @@
 package pl.mg.coursera.spring.spel;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -16,7 +18,9 @@ public class Robot {
         return id;
     }
 
-    public void setId(String id) {
+    // ? - w SPEL oznacza, ze parametr moze byc nullem
+    @Autowired
+    public void setId(@Value("#{randomText.getText()?.length()}") String id) {
         this.id = id;
     }
 
@@ -24,7 +28,8 @@ public class Robot {
         return speech;
     }
 
-    public void setSpeech(String speech) {
+    @Autowired
+    public void setSpeech(@Value("#{randomText.getText()}") String speech) {
         this.speech = speech;
     }
 }
