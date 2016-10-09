@@ -10,6 +10,7 @@
 	 <bean id="consoleWriter" primary="true"
 		class="pl.mg.coursera.spring.autowiringannotations.ConsoleWriter"></bean>
 	 <bean id="fileWriter" class="pl.mg.coursera.spring.autowiringannotations.FileWriter"></bean>
-	 <bean id="squirrel" class="pl.mg.coursera.spring.autowiringannotations.FileWriter"></bean>
+	 <bean id="squirrel" class="pl.mg.coursera.spring.autowiringannotations.FileWriter">
+	 </bean>
 
 </beans>
