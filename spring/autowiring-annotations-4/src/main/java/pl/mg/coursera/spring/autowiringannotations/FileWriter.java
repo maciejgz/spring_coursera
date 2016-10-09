@@ -1,6 +1,8 @@
 package pl.mg.coursera.spring.autowiringannotations;
 
-//@Component
+import org.springframework.stereotype.Component;
+
+@Component
 public class FileWriter implements LogWriter {
 
     public void write(String text) {
