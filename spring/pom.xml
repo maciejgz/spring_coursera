@@ -12,6 +12,7 @@
     <module>bean-configuration-3</module>
     <module>autowiring-annotations-4</module>
     <module>spel-5</module>
+    <module>database-6</module>
   </modules>
 
 
