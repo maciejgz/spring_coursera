@@ -7,4 +7,12 @@
 	<context:annotation-config />
 	<context:component-scan base-package="pl.mg.coursera.spring.spel"></context:component-scan>
 
+
+	<bean id="robot" class="pl.mg.coursera.spring.spel.Robot">
+		<property name="id" value="#{100+33}"></property>
+		<property name="speech" value="#{randomText.getText()}"></property>
+	</bean>
+
+
+	<bean id="randomText" class="pl.mg.coursera.spring.spel.RandomText"></bean>
 </beans>
